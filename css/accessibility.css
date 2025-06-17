@@ -1,0 +1,215 @@
+/* Стили для режима доступности */
+.accessibility-mode {
+    /* Улучшенная типография */
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+    letter-spacing: 0.5px !important;
+    word-spacing: 2px !important;
+}
+
+/* Заголовки */
+.accessibility-mode h1 {
+    font-size: 2.8em !important;
+    margin-bottom: 1em !important;
+    line-height: 1.4 !important;
+}
+
+.accessibility-mode h2 {
+    font-size: 2.2em !important;
+    margin-bottom: 0.9em !important;
+    line-height: 1.4 !important;
+}
+
+.accessibility-mode h3 {
+    font-size: 1.8em !important;
+    margin-bottom: 0.8em !important;
+    line-height: 1.4 !important;
+}
+
+.accessibility-mode h4, 
+.accessibility-mode h5, 
+.accessibility-mode h6 {
+    font-size: 1.5em !important;
+    margin-bottom: 0.7em !important;
+    line-height: 1.4 !important;
+}
+
+/* Улучшенный контраст и цвета */
+.accessibility-mode {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+}
+
+.accessibility-mode .bg-dark {
+    background-color: #000000 !important;
+}
+
+.accessibility-mode .navbar-dark {
+    background-color: #000000 !important;
+}
+
+.accessibility-mode .text-muted {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.accessibility-mode .card {
+    border: 3px solid #000000 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.accessibility-mode .card-body {
+    background-color: #ffffff !important;
+    padding: 2rem !important;
+}
+
+/* Улучшенные ссылки */
+.accessibility-mode a {
+    text-decoration: underline !important;
+    color: #0056b3 !important;
+    font-weight: bold !important;
+}
+
+.accessibility-mode .nav-link {
+    text-decoration: none !important;
+    padding: 0.8rem 1.2rem !important;
+    margin: 0 0.3rem !important;
+    border-radius: 5px !important;
+}
+
+.accessibility-mode .nav-link:hover,
+.accessibility-mode .nav-link:focus {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Кнопка переключения режима доступности */
+#accessibilityToggle {
+    background-color: #0056b3;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+    position: relative;
+}
+
+#accessibilityToggle:hover,
+#accessibilityToggle:focus {
+    background-color: #fff;
+    color: #0056b3;
+    border-color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#accessibilityToggle.active {
+    background-color: #fff;
+    color: #0056b3;
+}
+
+/* Улучшенная фокусировка */
+.accessibility-mode a:focus,
+.accessibility-mode button:focus {
+    outline: 3px solid #ffd700 !important;
+    outline-offset: 3px !important;
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5) !important;
+}
+
+/* Улучшенные формы */
+.accessibility-mode .form-control {
+    padding: 1rem !important;
+    font-size: 1.1em !important;
+    border: 2px solid #000000 !important;
+    border-radius: 8px !important;
+}
+
+.accessibility-mode .form-control:focus {
+    border-color: #0056b3 !important;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.25) !important;
+}
+
+/* Улучшенные кнопки */
+.accessibility-mode .btn {
+    padding: 12px 24px !important;
+    font-size: 1.1em !important;
+    border-radius: 8px !important;
+    font-weight: bold !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Улучшенные изображения */
+.accessibility-mode img {
+    border: 3px solid #000000 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Улучшенные таблицы */
+.accessibility-mode table {
+    border: 2px solid #000000 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+.accessibility-mode th,
+.accessibility-mode td {
+    padding: 1rem !important;
+    border: 1px solid #000000 !important;
+}
+
+/* Улучшенные списки */
+.accessibility-mode ul,
+.accessibility-mode ol {
+    padding-left: 2rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.accessibility-mode li {
+    margin-bottom: 0.8rem !important;
+}
+
+/* Подсказки */
+.accessibility-mode [title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 1000;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+/* Улучшенные отступы для контента */
+.accessibility-mode .container {
+    padding: 2rem 15px !important;
+}
+
+.accessibility-mode .row {
+    margin-bottom: 2rem !important;
+}
+
+/* Улучшенные карточки событий */
+.accessibility-mode .event-card,
+.accessibility-mode .artist-card {
+    margin-bottom: 2rem !important;
+    transition: transform 0.3s ease !important;
+}
+
+.accessibility-mode .event-card:hover,
+.accessibility-mode .artist-card:hover {
+    transform: translateY(-5px) !important;
+} 

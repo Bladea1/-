@@ -1,0 +1,2316 @@
+/* Основные стили */
+:root {
+  --primary-color: #0f0;
+  --dark-bg: #111;
+  --darker-bg: #000;
+  --card-bg: #222;
+  --text-light: #eee;
+  --text-muted: #888;
+  --footer-text: #ffffff;
+  --animation-duration: 300ms;
+  --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --card-spacing: 2rem;
+  --button-gradient: linear-gradient(45deg, #00ff00, #008000);
+  --button-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+  --button-active-shadow: 0 2px 8px rgba(0, 255, 0, 0.3);
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Шапка сайта */
+header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #0f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo h1 {
+  color: #0f0;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #0f0;
+}
+
+/* Главная страница */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #0f0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Кнопки на главной странице */
+.hero .button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--darker-bg);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero .button:hover {
+  background-color: var(--text-light);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+}
+
+/* Галерея */
+.gallery-page {
+  padding: 2rem;
+}
+
+.gallery-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  background: #222;
+  border: 1px solid #0f0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #0f0;
+  color: #000;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  padding: 1rem;
+  transition: bottom 0.3s;
+}
+
+.gallery-item:hover .overlay {
+  bottom: 0;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+/* Художники */
+.artists-page {
+  padding: 2rem;
+}
+
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.artist-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.artist-card:hover {
+  transform: translateY(-10px);
+}
+
+.artist-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #0f0;
+}
+
+.artist-card .specialty {
+  color: #0f0;
+  margin: 1rem 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #333;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.social-link:hover {
+  background: #0f0;
+  color: #000;
+}
+
+/* События */
+.events-page {
+  padding: 2rem;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.event-item {
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  transition: transform 0.3s;
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+}
+
+.event-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 2rem;
+  flex: 1;
+}
+
+.event-info .date {
+  color: #0f0;
+  margin-bottom: 1rem;
+}
+
+/* Контакты */
+.contact-page {
+  padding: 2rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-item i {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  width: 2.5rem;
+  text-align: center;
+}
+
+.contact-info-item .info-content {
+  flex: 1;
+}
+
+.contact-info-item h4 {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.contact-info-item p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.contact-form {
+  background: #222;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #0f0;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: #333;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0f0;
+}
+
+/* Подвал */
+footer {
+  background-color: var(--darker-bg);
+  border-top: 2px solid var(--primary-color);
+  padding: 3rem 0 1rem;
+}
+
+.footer h5 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.footer p {
+  color: #d1d1d1;
+}
+
+.footer-events a,
+.footer a {
+  color: #d1d1d1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-events a:hover,
+.footer a:hover {
+  color: var(--primary-color);
+}
+
+.footer .text-muted {
+  color: #d1d1d1 !important;
+}
+
+.footer .social-links a {
+  background-color: transparent;
+  border: 1px solid #d1d1d1;
+  color: #d1d1d1;
+  transition: all 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--darker-bg);
+}
+
+.footer hr.bg-light {
+  background-color: #333 !important;
+  opacity: 1;
+}
+
+.footer .newsletter-form .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #333;
+  color: #ffffff;
+}
+
+.footer .newsletter-form .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
+}
+
+.footer .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.footer .btn-primary:hover {
+  background-color: #00cc00;
+  border-color: #00cc00;
+}
+
+.footer-events small.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .event-item {
+    flex-direction: column;
+  }
+
+  .event-item img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-item,
+.artist-card,
+.event-item {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Общие стили для страниц */
+.styles-page,
+.events-page,
+.artists-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Стили для заголовков */
+.styles-page h2,
+.events-page h2, 
+.artists-page h2 {
+  text-align: center;
+  color: #0f0;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Сетка для стилей граффити */
+.styles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.style-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 255, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.style-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+.style-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.style-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.style-card h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.style-card p {
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.style-card .characteristics {
+  margin-bottom: 1.5rem;
+}
+
+.style-card .characteristic-item {
+  color: #d1d1d1;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.style-card .characteristic-item i {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.style-card .btn-outline-light {
+  align-self: flex-start;
+  margin-top: auto;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.style-card .btn-outline-light:hover {
+  background: var(--primary-color);
+  color: var(--darker-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.2);
+}
+
+.style-card .badge {
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  color: #ffffff;
+}
+
+/* Анимация для карточек */
+.styles-grid [data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.styles-grid [data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Сетка стилей */
+.styles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+/* Кастомизация Bootstrap */
+.navbar {
+  background-color: var(--darker-bg) !important;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar-brand .logo-text {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--text-light) !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--darker-bg);
+}
+
+.btn-primary:hover {
+  background-color: var(--text-light);
+  border-color: var(--text-light);
+  color: var(--darker-bg);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: none;
+  transition: transform 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Главная страница */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  color: var(--primary-color);
+}
+
+/* Галерея */
+.gallery-filters {
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--primary-color);
+  color: var(--dark-color);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  padding: 1rem;
+  transition: bottom 0.3s;
+}
+
+.gallery-item:hover .overlay {
+  bottom: 0;
+}
+
+/* Стили для карточек событий */
+.event-card {
+  height: 100%;
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.event-card .card-body {
+  padding: 1.5rem;
+}
+
+.event-card .btn-details {
+    width: 100%;
+  margin-top: 1rem;
+}
+
+/* Стили для блога */
+.blog-categories {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.blog-categories h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.category-list,
+.tag-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-list li,
+.tag-list li {
+  margin-bottom: 0.5rem;
+}
+
+.category-list a,
+.tag-list a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-list a:hover,
+.tag-list a:hover {
+  color: var(--primary-color);
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 15px;
+  margin: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tag-badge:hover {
+  background: var(--primary-color);
+  color: var(--darker-bg);
+}
+
+/* Стили для контактной информации */
+.contact-info {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-item i {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  width: 2.5rem;
+  text-align: center;
+}
+
+.contact-info-item .info-content {
+  flex: 1;
+}
+
+.contact-info-item h4 {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.contact-info-item p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+/* Стили для блога */
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+article.card {
+  margin-bottom: 2rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+article.card .card-body {
+  padding: 1.5rem;
+}
+
+article.card .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+article.card .card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Выравнивание элементов */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*="col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Стили футера */
+.footer {
+  background-color: var(--darker-bg);
+  border-top: 2px solid var(--primary-color);
+  padding: 3rem 0 1rem;
+}
+
+.footer h5 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.footer p {
+  color: #d1d1d1;
+}
+
+.footer-events a,
+.footer a {
+  color: #d1d1d1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-events a:hover,
+.footer a:hover {
+  color: var(--primary-color);
+}
+
+.footer .text-muted {
+  color: #d1d1d1 !important;
+}
+
+.footer .social-links a {
+  background-color: transparent;
+  border: 1px solid #d1d1d1;
+  color: #d1d1d1;
+  transition: all 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--darker-bg);
+}
+
+.footer hr.bg-light {
+  background-color: #333 !important;
+  opacity: 1;
+}
+
+.footer .newsletter-form .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #333;
+  color: #ffffff;
+}
+
+.footer .newsletter-form .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
+}
+
+.footer .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.footer .btn-primary:hover {
+  background-color: #00cc00;
+  border-color: #00cc00;
+}
+
+.footer-events small.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Темная тема */
+.dark-theme {
+  --dark-bg: #000;
+  --darker-bg: #111;
+  --card-bg: #1a1a1a;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-filters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filter-btn {
+    margin: 0.25rem;
+  }
+
+  .event-item {
+    flex-direction: column;
+  }
+
+  .event-item img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Утилиты */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+/* Стили для страницы отдельной работы */
+.artwork-main-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+
+.artwork-main-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.artwork-main-image:hover img {
+    transform: scale(1.02);
+}
+
+.zoom-hint {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.artwork-main-image:hover .zoom-hint {
+    opacity: 1;
+}
+
+.artwork-info {
+    height: 100%;
+    border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.process-gallery img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.process-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.artist-card {
+    border: 1px solid rgba(0, 255, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+}
+
+.comment {
+    transition: transform 0.3s ease;
+}
+
+.comment:hover {
+    transform: translateX(5px);
+}
+
+#commentText {
+    border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+#commentText:focus {
+    border-color: rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
+}
+
+/* Модальное окно для изображений */
+.modal-content {
+    background-color: rgba(33, 37, 41, 0.95) !important;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+#modalImage {
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+/* Анимации для элементов */
+[data-aos] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Стили для тегов */
+.badge {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
+/* Стили для похожих работ */
+.similar-work {
+    transition: transform 0.3s ease;
+}
+
+.similar-work:hover {
+    transform: translateY(-5px);
+}
+
+/* Стили для кнопок подробнее */
+/* Стили кнопок перенесены в общий блок стилей кнопок выше */
+
+/* Стили для тегов и категорий */
+.tag-badge,
+.category-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 15px;
+  margin: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+.tag-badge:hover,
+.category-badge:hover {
+  background: var(--primary-color);
+  color: var(--darker-bg);
+}
+
+/* Стили для футера */
+.footer {
+  background-color: var(--darker-bg);
+  border-top: 2px solid var(--primary-color);
+}
+
+.footer-events a {
+  transition: color 0.3s;
+}
+
+.footer-events a:hover {
+  color: var(--primary-color) !important;
+}
+
+.newsletter-form .form-control {
+  border: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.newsletter-form .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
+}
+
+.social-links a {
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--darker-bg) !important;
+}
+
+/* Стили для карточек блога */
+article.card {
+  margin-bottom: 2rem;
+}
+
+article.card .card-body {
+  padding: 1.5rem;
+}
+
+article.card .btn-details {
+  align-self: flex-start;
+  width: auto;
+  margin-top: 1rem;
+}
+
+/* Стили для карточек стилей */
+.style-card {
+  height: 100%;
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  border: 1px solid rgba(0, 255, 0, 0.1);
+  display: flex;
+    flex-direction: column;
+  }
+
+.style-card .card-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+    flex-direction: column;
+}
+
+.style-card .btn-details {
+  margin-top: auto;
+}
+
+/* Стили для фильтров галереи */
+.gallery-filters {
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary-color);
+    color: var(--dark-color);
+}
+
+/* Анимация для элементов галереи */
+.gallery-item {
+    transition: all 0.3s ease;
+}
+
+.gallery-item .card {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Стили для блога */
+.blog-post {
+    transition: all 0.3s ease;
+}
+
+.blog-post .card {
+    height: 100%;
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.blog-post .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+.blog-post .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog-post .card-body {
+    padding: 1.5rem;
+}
+
+.blog-post .card-title {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.blog-post .card-text {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.blog-post .btn-details {
+    width: auto;
+    padding: 0.5rem 1.5rem;
+}
+
+/* Стили для категорий и тегов */
+.blog-categories {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.category-list a {
+    color: var(--text-light);
+  text-decoration: none;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.category-list a:hover,
+.category-list a.active {
+    color: var(--primary-color);
+}
+
+.category-list .badge {
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.tag-badge {
+  display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--text-light);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.tag-badge:hover,
+.tag-badge.active {
+    background: var(--primary-color);
+    color: var(--dark-color);
+}
+
+.popular-posts .post-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.popular-posts .post-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.popular-posts a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.popular-posts a:hover h4 {
+    color: var(--primary-color);
+}
+
+/* Обертка для основного контента */
+.main-wrapper {
+    min-height: 100vh;
+  display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+/* Стили для блога */
+.blog-post {
+    margin-bottom: 1.5rem;
+}
+
+.blog-post .card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-post .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+.blog-post .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-post .card-body {
+    padding: 1rem;
+}
+
+.blog-post .card-title {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+.blog-post .card-text {
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-height: 2.8em;
+    overflow: hidden;
+}
+
+.blog-post .text-muted {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post .btn-details {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Стили для футера */
+.footer {
+    background-color: var(--darker-bg);
+    border-top: 2px solid var(--primary-color);
+    padding: 2rem 0 1rem;
+    margin-top: auto;
+}
+
+/* Стили для блога */
+.posts-counter {
+  text-align: center;
+  color: var(--text-muted);
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  background: var(--card-bg);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+article.card {
+  transition: all var(--animation-duration) var(--animation-timing);
+  will-change: transform, opacity;
+}
+
+article.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+.blog-filters {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: var(--card-spacing);
+  border: 1px solid rgba(0, 255, 0, 0.1);
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+}
+
+.category-list a,
+.tag-badge {
+  transition: all var(--animation-duration) var(--animation-timing);
+}
+
+.category-list a:hover,
+.tag-badge:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 0 10px var(--primary-color);
+}
+
+.category-list a.active,
+.tag-badge.active {
+  background: var(--primary-color);
+  color: var(--darker-bg);
+  font-weight: bold;
+}
+
+.posts-counter {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  margin: 0;
+}
+
+.blog-post {
+  margin-bottom: var(--card-spacing);
+  opacity: 1;
+  transform: translateY(0);
+  transition: all var(--animation-duration) var(--animation-timing);
+}
+
+.blog-post.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.blog-post .card {
+  height: 100%;
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+.blog-post .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-post .card-body {
+  padding: 1.5rem;
+}
+
+.blog-post .card-title {
+  color: var(--text-light);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post .card-text {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.blog-post .text-muted {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.btn-reset-filters {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  color: var(--text-light);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all var(--animation-duration) var(--animation-timing);
+  opacity: 0.8;
+}
+
+.btn-reset-filters:hover {
+  background: rgba(255, 0, 0, 0.2);
+  border-color: rgba(255, 0, 0, 0.3);
+  color: var(--text-light);
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.btn-reset-filters.hidden {
+  display: none;
+}
+
+/* Общие стили для кнопок (кроме главной страницы) */
+.btn-details,
+.gallery-item .btn,
+.artist-card .btn,
+.event-card .btn,
+.contact-form .btn:not(.btn-primary),
+.artwork-card .btn {
+  background: var(--button-gradient);
+  border: none;
+  color: var(--darker-bg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-details:hover,
+.gallery-item .btn:hover,
+.artist-card .btn:hover,
+.event-card .btn:hover,
+.contact-form .btn:not(.btn-primary):hover,
+.artwork-card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--button-shadow);
+  color: var(--darker-bg);
+}
+
+.btn-details:active,
+.gallery-item .btn:active,
+.artist-card .btn:active,
+.event-card .btn:active,
+.contact-form .btn:not(.btn-primary):active,
+.artwork-card .btn:active {
+  transform: translateY(0);
+  box-shadow: var(--button-active-shadow);
+}
+
+/* Стили для кнопок в карточках */
+.card .btn-details,
+.style-card .btn-details {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Стили для кнопок в галерее */
+.gallery-filters .filter-btn {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.gallery-filters .filter-btn:hover,
+.gallery-filters .filter-btn.active {
+  background: var(--primary-color);
+  color: var(--darker-bg);
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+/* Стили для кнопок в формах */
+.contact-form .btn-submit {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Стили для кнопок в событиях */
+.event-card .btn-details {
+  margin-top: 1rem;
+}
+
+/* Стили для кнопок в профилях художников */
+.artist-card .social-links .btn {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--text-light);
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.artist-card .social-links .btn:hover {
+  background: var(--primary-color);
+  color: var(--darker-bg);
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+/* Стили для блога */
+.blog-filters {
+  margin-bottom: 2rem;
+}
+
+.btn-reset-filters {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  color: var(--text-light);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.btn-reset-filters:hover {
+  background: rgba(255, 0, 0, 0.2);
+  border-color: rgba(255, 0, 0, 0.3);
+  color: var(--text-light);
+  opacity: 1;
+}
+
+.btn-reset-filters.hidden {
+  display: none;
+}
+
+.posts-counter {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.blog-post {
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.category-list a {
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.category-list a:hover,
+.category-list a.active {
+  background: var(--primary-color);
+  color: var(--darker-bg);
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  margin: 0.2rem;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  color: var(--text-light);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.tag-badge:hover,
+.tag-badge.active {
+  background: var(--primary-color);
+  color: var(--darker-bg);
+  border-color: var(--primary-color);
+}
+
+/* Анимации для постов */
+.blog-post {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.blog-post.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+/* Стили для кнопки "Наверх" */
+.scroll-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--darker-bg);
+  color: #0f0;
+  border: 2px solid #0f0;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #0f0;
+  color: var(--darker-bg);
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.scroll-to-top.visible {
+  display: flex;
+  animation: fadeInButton 0.3s ease-in-out;
+}
+
+.scroll-to-top i {
+  transition: transform 0.3s ease;
+  color: inherit;
+}
+
+.scroll-to-top:hover i {
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInButton {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Стили для карточек художников */
+.card.bg-dark .text-muted {
+    color: #b0b0b0 !important;
+}
+
+.card.bg-dark .card-text {
+    color: #e0e0e0;
+}
+
+.card.bg-dark .card-title {
+    color: #ffffff;
+}
+
+.card.bg-dark .badge {
+    font-size: 0.85rem;
+}
+
+/* Улучшение контрастности для кнопок фильтров */
+.filter-btn {
+    color: #e0e0e0;
+    background-color: #2d2d2d;
+    border: 1px solid #404040;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #404040;
+    color: #ffffff;
+}
+
+.filter-btn.active {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #ffffff;
+}
+
+/* Стили для карточек художников */
+.artists-filters {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.artists-filters h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.artists-filters h4 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.artists-filters .filter-btn {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.artists-filters .filter-btn:hover {
+    background: rgba(0, 255, 0, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 255, 0, 0.2);
+}
+
+.artists-filters .filter-btn.active {
+    background: var(--primary-color);
+    color: var(--darker-bg);
+    font-weight: 500;
+}
+
+.artists-filters .btn-reset-filters {
+    margin-top: 1.5rem;
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.artists-filters .btn-reset-filters:hover {
+    background: rgba(255, 0, 0, 0.2);
+    border-color: rgba(255, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Улучшенные стили для карточек художников */
+.card.bg-dark {
+    background: var(--card-bg) !important;
+    border: 1px solid rgba(0, 255, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card.bg-dark:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+.card.bg-dark .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card.bg-dark .text-muted {
+    color: #d1d1d1 !important;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.card.bg-dark .card-text {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.card.bg-dark .badge {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: rgba(13, 110, 253, 0.2);
+    border: 1px solid rgba(13, 110, 253, 0.3);
+    transition: all 0.3s ease;
+}
+
+.card.bg-dark .badge:hover {
+    background: rgba(13, 110, 253, 0.3);
+    transform: translateY(-1px);
+}
+
+.card.bg-dark .btn-outline-light {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.card.bg-dark .btn-outline-light:hover {
+    background: var(--primary-color);
+    color: var(--darker-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.2);
+}
+
+/* Анимация для карточек */
+[data-aos="fade-up"] {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+[data-aos="fade-up"].aos-animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Улучшенные стили для страницы блога */
+.blog-post .card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.blog-post .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post .card-text {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.blog-post .text-muted {
+    color: #d1d1d1 !important;
+    font-size: 0.9rem;
+}
+
+.blog-categories {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.blog-categories h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.category-list a {
+    color: #ffffff;
+    padding: 0.5rem 0;
+}
+
+.category-list a:hover {
+    color: var(--primary-color);
+}
+
+.tag-badge {
+    color: #ffffff;
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.popular-posts .post-item h4 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.popular-posts .post-item .text-muted {
+    color: #d1d1d1 !important;
+}
+
+/* Улучшенные стили для страницы О компании */
+.about-section {
+    color: #ffffff;
+}
+
+.about-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.about-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-card p {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.about-card .text-muted {
+    color: #d1d1d1 !important;
+}
+
+.team-member-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+.team-member-card h4 {
+    color: var(--primary-color);
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+}
+
+.team-member-card .position {
+    color: #d1d1d1;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.team-member-card .description {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Общие улучшения для текстовых элементов */
+.text-muted {
+    color: #d1d1d1 !important;
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.card-text {
+    color: #ffffff;
+}
+
+/* Стили для карточек команды */
+.team-member.card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.team-member.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+.team-member .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.team-member .card-body {
+    padding: 1.5rem;
+}
+
+.team-member .h5 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.team-member .text-primary {
+    color: #0f0 !important;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.team-member .small {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Анимация для карточек */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Стили для карточек галереи */
+.gallery-item .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.gallery-item .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+.gallery-item .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.gallery-item .card-title {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-item .card-text {
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.gallery-item .btn-outline-light {
+    align-self: flex-start;
+    margin-top: auto;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.gallery-item .btn-outline-light:hover {
+    background: var(--primary-color);
+    color: var(--darker-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.2);
+}
+
+.gallery-item .badge {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid rgba(0, 255, 0, 0.2);
+    color: #ffffff;
+}
+
+/* Общие стили для кнопок на карточках */
+.card .btn-outline-light {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.card .btn-outline-light:hover {
+    background: var(--primary-color);
+    color: var(--darker-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.2);
+}
