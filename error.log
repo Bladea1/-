@@ -1,0 +1,739 @@
+[28-May-2025 01:49:24 Europe/Berlin] Начало выполнения скрипта отправки почты
+[28-May-2025 01:49:24 Europe/Berlin] Все необходимые файлы найдены
+[28-May-2025 01:49:24 Europe/Berlin] Получены данные формы: {"name":"","email":"","subject":"","message":""}
+[28-May-2025 01:49:24 Europe/Berlin] Не заполнены обязательные поля
+[28-May-2025 01:50:05 Europe/Berlin] Начало выполнения скрипта отправки почты
+[28-May-2025 01:50:05 Europe/Berlin] Все необходимые файлы найдены
+[28-May-2025 01:50:05 Europe/Berlin] Получены данные формы: {"name":"","email":"","subject":"","message":""}
+[28-May-2025 01:50:05 Europe/Berlin] Не заполнены обязательные поля
+[28-May-2025 01:50:36 Europe/Berlin] Начало выполнения скрипта отправки почты
+[28-May-2025 01:50:36 Europe/Berlin] Все необходимые файлы найдены
+[28-May-2025 01:50:36 Europe/Berlin] Получены данные формы: {"name":"","email":"","subject":"","message":""}
+[28-May-2025 01:50:36 Europe/Berlin] Не заполнены обязательные поля
+[28-May-2025 01:52:09 Europe/Berlin] Начало выполнения скрипта отправки почты
+[28-May-2025 01:52:09 Europe/Berlin] Все необходимые файлы найдены
+[28-May-2025 01:52:09 Europe/Berlin] Получены данные формы: {"name":"","email":"","subject":"","message":""}
+[28-May-2025 01:52:09 Europe/Berlin] Не заполнены обязательные поля
+[28-May-2025 01:54:39 Europe/Berlin] Начало выполнения скрипта отправки почты
+[28-May-2025 01:54:39 Europe/Berlin] POST данные: Array
+(
+    [name] => авпав
+    [email] => staszavozov@yandex.ru
+    [subject] => апавпававп
+    [message] => павпавпав
+)
+
+[28-May-2025 01:54:39 Europe/Berlin] FILES данные: Array
+(
+)
+
+[28-May-2025 01:54:39 Europe/Berlin] Все необходимые файлы найдены
+[28-May-2025 01:54:39 Europe/Berlin] Получены данные формы: {"name":"\u0430\u0432\u043f\u0430\u0432","email":"staszavozov@yandex.ru","subject":"\u0430\u043f\u0430\u0432\u043f\u0430\u0432\u0430\u0432\u043f","message":"\u043f\u0430\u0432\u043f\u0430\u0432\u043f\u0430\u0432"}
+[28-May-2025 01:54:39 Europe/Berlin] Настройка SMTP с email: graffzone@yandex.ru
+[28-May-2025 01:54:39 Europe/Berlin] Попытка отправки письма...
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 220 mail-nwsmtp-smtp-production-main-67.sas.yp-c.yandex.net Ok 1748390079-csepWT7LhmI0
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: EHLO localhost
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-67.sas.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: AUTH LOGIN
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: [credentials hidden]
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: [credentials hidden]
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 235 2.7.0 Authentication successful. 1748390079-csepWT7LhmI0
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<graffzone@yandex.ru>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.1.0 <graffzone@yandex.ru> ok 1748390079-csepWT7LhmI0-ecGr1Z7y
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: RCPT TO:<graffzone@yandex.ru>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.1.5 <graffzone@yandex.ru> recipient ok 1748390079-csepWT7LhmI0-ecGr1Z7y
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: DATA
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 354 Start mail input, end with <CRLF>.<CRLF>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Date: Wed, 28 May 2025 01:54:39 +0200
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: To: graffzone@yandex.ru
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: From: GraffZone <graffzone@yandex.ru>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Reply-To: =?UTF-8?B?0LDQstC/0LDQsg==?= <staszavozov@yandex.ru>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Subject: =?UTF-8?B?0KHQvtC+0LHRidC10L3QuNC1INGBINGB0LDQudGC0LAgR3JhZmZab25lOg==?=
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:  =?UTF-8?B?INCw0L/QsNCy0L/QsNCy0LDQstC/?=
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Message-ID: <n0nRHGWZ4C5AT7ewvbC2LfQyddYpZY4Kxw1EYo0k@localhost>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.8.1 (https://github.com/PHPMailer/PHPMailer)
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_n0nRHGWZ4C5AT7ewvbC2LfQyddYpZY4Kxw1EYo0k"
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_n0nRHGWZ4C5AT7ewvbC2LfQyddYpZY4Kxw1EYo0k
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: павпавпав
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_n0nRHGWZ4C5AT7ewvbC2LfQyddYpZY4Kxw1EYo0k
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <html>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <head>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <title>Новое сообщение с сайта GraffZone</title>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </head>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <body>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <h2>Новое сообщение с формы обратной связи</h2>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Имя:</strong> авпав</p>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Email:</strong> staszavozov@yandex.ru</p>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Тема:</strong> апавпававп</p>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Сообщение:</strong></p>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p>павпавпав</p>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </body>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </html>
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_n0nRHGWZ4C5AT7ewvbC2LfQyddYpZY4Kxw1EYo0k--
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: .
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-67.sas.yp-c.yandex.net 1748390079-csepWT7LhmI0-ecGr1Z7y
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: QUIT
+
+[28-May-2025 01:54:40 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 221 2.0.0 Closing connecton
+
+[28-May-2025 01:54:40 Europe/Berlin] Письмо успешно отправлено
+[28-May-2025 01:57:46 Europe/Berlin] Начало выполнения скрипта отправки почты
+[28-May-2025 01:57:46 Europe/Berlin] POST данные: Array
+(
+    [name] => ываываыв
+    [email] => test@example.com
+    [subject] => выавыа
+    [message] => ываываыв
+)
+
+[28-May-2025 01:57:46 Europe/Berlin] FILES данные: Array
+(
+)
+
+[28-May-2025 01:57:46 Europe/Berlin] Все необходимые файлы найдены
+[28-May-2025 01:57:46 Europe/Berlin] Получены данные формы: {"name":"\u044b\u0432\u0430\u044b\u0432\u0430\u044b\u0432","email":"test@example.com","subject":"\u0432\u044b\u0430\u0432\u044b\u0430","message":"\u044b\u0432\u0430\u044b\u0432\u0430\u044b\u0432"}
+[28-May-2025 01:57:46 Europe/Berlin] Настройка SMTP с email: graffzone@yandex.ru
+[28-May-2025 01:57:46 Europe/Berlin] Попытка отправки письма...
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 220 mail-nwsmtp-smtp-production-main-94.vla.yp-c.yandex.net Ok 1748390266-kveJjn6LbmI0
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: EHLO localhost
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-94.vla.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: AUTH LOGIN
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: [credentials hidden]
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: [credentials hidden]
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 235 2.7.0 Authentication successful. 1748390266-kveJjn6LbmI0
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<graffzone@yandex.ru>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.1.0 <graffzone@yandex.ru> ok 1748390266-kveJjn6LbmI0-DAfrJTEC
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: RCPT TO:<graffzone@yandex.ru>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.1.5 <graffzone@yandex.ru> recipient ok 1748390266-kveJjn6LbmI0-DAfrJTEC
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: DATA
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 354 Start mail input, end with <CRLF>.<CRLF>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Date: Wed, 28 May 2025 01:57:46 +0200
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: To: graffzone@yandex.ru
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: From: GraffZone <graffzone@yandex.ru>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Reply-To: =?UTF-8?B?0YvQstCw0YvQstCw0YvQsg==?= <test@example.com>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Subject: =?UTF-8?B?0KHQvtC+0LHRidC10L3QuNC1INGBINGB0LDQudGC0LAgR3JhZmZab25lOiA=?=
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:  =?UTF-8?B?0LLRi9Cw0LLRi9Cw?=
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Message-ID: <wAYqwU78A1t1ikwK554LTdEMrZZr5v7YWT7TzL7Ajc@localhost>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.8.1 (https://github.com/PHPMailer/PHPMailer)
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_wAYqwU78A1t1ikwK554LTdEMrZZr5v7YWT7TzL7Ajc"
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_wAYqwU78A1t1ikwK554LTdEMrZZr5v7YWT7TzL7Ajc
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: ываываыв
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_wAYqwU78A1t1ikwK554LTdEMrZZr5v7YWT7TzL7Ajc
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <html>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <head>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <title>Новое сообщение с сайта GraffZone</title>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </head>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <body>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <h2>Новое сообщение с формы обратной связи</h2>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Имя:</strong> ываываыв</p>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Email:</strong> test@example.com</p>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Тема:</strong> выавыа</p>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Сообщение:</strong></p>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p>ываываыв</p>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </body>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </html>
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_wAYqwU78A1t1ikwK554LTdEMrZZr5v7YWT7TzL7Ajc--
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: .
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-94.vla.yp-c.yandex.net 1748390266-kveJjn6LbmI0-DAfrJTEC
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: QUIT
+
+[28-May-2025 01:57:47 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 221 2.0.0 Closing connecton
+
+[28-May-2025 01:57:47 Europe/Berlin] Письмо успешно отправлено
+[28-May-2025 02:11:01 Europe/Berlin] Начало выполнения скрипта отправки почты
+[28-May-2025 02:11:01 Europe/Berlin] POST данные: Array
+(
+    [name] => прпр
+    [email] => staszavozov@yandex.xn--ru-8kc3d
+    [subject] => рарап
+    [message] => рапрап
+)
+
+[28-May-2025 02:11:01 Europe/Berlin] FILES данные: Array
+(
+)
+
+[28-May-2025 02:11:01 Europe/Berlin] Все необходимые файлы найдены
+[28-May-2025 02:11:01 Europe/Berlin] Получены данные формы: {"name":"\u043f\u0440\u043f\u0440","email":"staszavozov@yandex.xn--ru-8kc3d","subject":"\u0440\u0430\u0440\u0430\u043f","message":"\u0440\u0430\u043f\u0440\u0430\u043f"}
+[28-May-2025 02:11:01 Europe/Berlin] Настройка SMTP с email: graffzone@yandex.ru
+[28-May-2025 02:11:01 Europe/Berlin] Попытка отправки письма...
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 220 mail-nwsmtp-smtp-production-main-84.iva.yp-c.yandex.net Ok 1748391060-0BIg105LguQ0
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: EHLO localhost
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-84.iva.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: AUTH LOGIN
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: [credentials hidden]
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: [credentials hidden]
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 235 2.7.0 Authentication successful. 1748391061-0BIg105LguQ0
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<graffzone@yandex.ru>
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.1.0 <graffzone@yandex.ru> ok 1748391061-0BIg105LguQ0-g3aZTGxz
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: RCPT TO:<graffzone@yandex.ru>
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.1.5 <graffzone@yandex.ru> recipient ok 1748391061-0BIg105LguQ0-g3aZTGxz
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: DATA
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 354 Start mail input, end with <CRLF>.<CRLF>
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Date: Wed, 28 May 2025 02:11:01 +0200
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: To: graffzone@yandex.ru
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: From: GraffZone <graffzone@yandex.ru>
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Reply-To: =?UTF-8?B?0L/RgNC/0YA=?= <staszavozov@yandex.xn--ru-8kc3d>
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Subject: =?UTF-8?B?0KHQvtC+0LHRidC10L3QuNC1INGBINGB0LDQudGC0LAgR3JhZmZab25lOiA=?=
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:  =?UTF-8?B?0YDQsNGA0LDQvw==?=
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Message-ID: <sVBO3BOVeg9C0QRKTHTy00d4ibTkRp1wwEyX2UguBQw@localhost>
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.8.1 (https://github.com/PHPMailer/PHPMailer)
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_sVBO3BOVeg9C0QRKTHTy00d4ibTkRp1wwEyX2UguBQw"
+
+[28-May-2025 02:11:01 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_sVBO3BOVeg9C0QRKTHTy00d4ibTkRp1wwEyX2UguBQw
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: рапрап
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_sVBO3BOVeg9C0QRKTHTy00d4ibTkRp1wwEyX2UguBQw
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <html>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <head>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <title>Новое сообщение с сайта GraffZone</title>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </head>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <body>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <h2>Новое сообщение с формы обратной связи</h2>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Имя:</strong> прпр</p>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Email:</strong> staszavozov@yandex.xn--ru-8kc3d</p>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Тема:</strong> рарап</p>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Сообщение:</strong></p>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p>рапрап</p>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </body>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </html>
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_sVBO3BOVeg9C0QRKTHTy00d4ibTkRp1wwEyX2UguBQw--
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: .
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-84.iva.yp-c.yandex.net 1748391061-0BIg105LguQ0-g3aZTGxz
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: QUIT
+
+[28-May-2025 02:11:02 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 221 2.0.0 Closing connecton
+
+[28-May-2025 02:11:02 Europe/Berlin] Письмо успешно отправлено
+[28-May-2025 02:20:27 Europe/Berlin] Начало выполнения скрипта отправки почты
+[28-May-2025 02:20:27 Europe/Berlin] POST данные: Array
+(
+    [name] => fdgdfgdf
+    [email] => staszavozov@yandex.ru
+    [subject] => dfgdfgdf
+    [message] => gfdgfd
+)
+
+[28-May-2025 02:20:27 Europe/Berlin] FILES данные: Array
+(
+)
+
+[28-May-2025 02:20:27 Europe/Berlin] Все необходимые файлы найдены
+[28-May-2025 02:20:27 Europe/Berlin] Получены данные формы: {"name":"fdgdfgdf","email":"staszavozov@yandex.ru","subject":"dfgdfgdf","message":"gfdgfd"}
+[28-May-2025 02:20:27 Europe/Berlin] Настройка SMTP с email: graffzone@yandex.ru
+[28-May-2025 02:20:27 Europe/Berlin] Попытка отправки письма...
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 220 mail-nwsmtp-smtp-production-main-68.vla.yp-c.yandex.net Ok 1748391626-QKIng37LcW20
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: EHLO localhost
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-68.vla.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: AUTH LOGIN
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: [credentials hidden]
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: [credentials hidden]
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 235 2.7.0 Authentication successful. 1748391627-QKIng37LcW20
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<graffzone@yandex.ru>
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.1.0 <graffzone@yandex.ru> ok 1748391627-QKIng37LcW20-AHn4yWN0
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: RCPT TO:<graffzone@yandex.ru>
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.1.5 <graffzone@yandex.ru> recipient ok 1748391627-QKIng37LcW20-AHn4yWN0
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: DATA
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 354 Start mail input, end with <CRLF>.<CRLF>
+
+[28-May-2025 02:20:27 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Date: Wed, 28 May 2025 02:20:27 +0200
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: To: graffzone@yandex.ru
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: From: GraffZone <graffzone@yandex.ru>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Reply-To: fdgdfgdf <staszavozov@yandex.ru>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Subject: =?UTF-8?B?0KHQvtC+0LHRidC10L3QuNC1INGBINGB0LDQudGC0LAgR3JhZmZab25lOiBk?=
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:  =?UTF-8?B?ZmdkZmdkZg==?=
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Message-ID: <CfXx1IYrjarInhnDwCIONtOpUfv5kQfbDYPxpNB0@localhost>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.8.1 (https://github.com/PHPMailer/PHPMailer)
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_CfXx1IYrjarInhnDwCIONtOpUfv5kQfbDYPxpNB0"
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_CfXx1IYrjarInhnDwCIONtOpUfv5kQfbDYPxpNB0
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: gfdgfd
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_CfXx1IYrjarInhnDwCIONtOpUfv5kQfbDYPxpNB0
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <html>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <head>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <title>Новое сообщение с сайта GraffZone</title>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </head>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <body>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <h2>Новое сообщение с формы обратной связи</h2>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Имя:</strong> fdgdfgdf</p>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Email:</strong> staszavozov@yandex.ru</p>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Тема:</strong> dfgdfgdf</p>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Сообщение:</strong></p>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p>gfdgfd</p>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </body>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </html>
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_CfXx1IYrjarInhnDwCIONtOpUfv5kQfbDYPxpNB0--
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: .
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-68.vla.yp-c.yandex.net 1748391627-QKIng37LcW20-AHn4yWN0
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: QUIT
+
+[28-May-2025 02:20:28 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 221 2.0.0 Closing connecton
+
+[28-May-2025 02:20:28 Europe/Berlin] Письмо успешно отправлено
+[28-May-2025 14:31:55 Europe/Berlin] Начало выполнения скрипта отправки почты
+[28-May-2025 14:31:55 Europe/Berlin] POST данные: Array
+(
+    [name] => правчрапр
+    [email] => staszavozov@yandex.xn--ru-jmc
+    [subject] => апррапапр
+    [message] => арппарпарпареап
+)
+
+[28-May-2025 14:31:55 Europe/Berlin] FILES данные: Array
+(
+)
+
+[28-May-2025 14:31:55 Europe/Berlin] Все необходимые файлы найдены
+[28-May-2025 14:31:55 Europe/Berlin] Получены данные формы: {"name":"\u043f\u0440\u0430\u0432\u0447\u0440\u0430\u043f\u0440","email":"staszavozov@yandex.xn--ru-jmc","subject":"\u0430\u043f\u0440\u0440\u0430\u043f\u0430\u043f\u0440","message":"\u0430\u0440\u043f\u043f\u0430\u0440\u043f\u0430\u0440\u043f\u0430\u0440\u0435\u0430\u043f"}
+[28-May-2025 14:31:55 Europe/Berlin] Настройка SMTP с email: graffzone@yandex.ru
+[28-May-2025 14:31:55 Europe/Berlin] Попытка отправки письма...
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 220 mail-nwsmtp-smtp-production-main-64.vla.yp-c.yandex.net Ok 1748435515-tVU6nJDLjqM0
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: EHLO 192.168.0.111
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-64.vla.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: AUTH LOGIN
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: [credentials hidden]
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: [credentials hidden]
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 235 2.7.0 Authentication successful. 1748435516-tVU6nJDLjqM0
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: MAIL FROM:<graffzone@yandex.ru>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.1.0 <graffzone@yandex.ru> ok 1748435516-tVU6nJDLjqM0-ytlrfJzb
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: RCPT TO:<graffzone@yandex.ru>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.1.5 <graffzone@yandex.ru> recipient ok 1748435516-tVU6nJDLjqM0-ytlrfJzb
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: DATA
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 354 Start mail input, end with <CRLF>.<CRLF>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Date: Wed, 28 May 2025 14:31:55 +0200
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: To: graffzone@yandex.ru
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: From: GraffZone <graffzone@yandex.ru>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Reply-To: =?UTF-8?B?0L/RgNCw0LLRh9GA0LDQv9GA?= <staszavozov@yandex.xn--ru-jmc>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Subject: =?UTF-8?B?0KHQvtC+0LHRidC10L3QuNC1INGBINGB0LDQudGC0LAgR3JhZmZab25lOg==?=
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:  =?UTF-8?B?INCw0L/RgNGA0LDQv9Cw0L/RgA==?=
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Message-ID: <MnEr09JQlxQ9JQ8MArsj2tYtQOBjVXgEDiPSelQdQ@192.168.0.111>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: X-Mailer: PHPMailer 6.8.1 (https://github.com/PHPMailer/PHPMailer)
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: MIME-Version: 1.0
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:  boundary="b1=_MnEr09JQlxQ9JQ8MArsj2tYtQOBjVXgEDiPSelQdQ"
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_MnEr09JQlxQ9JQ8MArsj2tYtQOBjVXgEDiPSelQdQ
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: арппарпарпареап
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_MnEr09JQlxQ9JQ8MArsj2tYtQOBjVXgEDiPSelQdQ
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <html>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <head>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <title>Новое сообщение с сайта GraffZone</title>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </head>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         <body>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <h2>Новое сообщение с формы обратной связи</h2>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Имя:</strong> правчрапр</p>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Email:</strong> staszavozov@yandex.xn--ru-jmc</p>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Тема:</strong> апррапапр</p>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p><strong>Сообщение:</strong></p>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:             <p>арппарпарпареап</p>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </body>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         </html>
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER:         
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: --b1=_MnEr09JQlxQ9JQ8MArsj2tYtQOBjVXgEDiPSelQdQ--
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: 
+
+[28-May-2025 14:31:57 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: .
+
+[28-May-2025 14:31:58 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-64.vla.yp-c.yandex.net 1748435516-tVU6nJDLjqM0-ytlrfJzb
+
+[28-May-2025 14:31:58 Europe/Berlin] PHPMailer DEBUG [1]: CLIENT -> SERVER: QUIT
+
+[28-May-2025 14:31:58 Europe/Berlin] PHPMailer DEBUG [2]: SERVER -> CLIENT: 221 2.0.0 Closing connecton
+
+[28-May-2025 14:31:58 Europe/Berlin] Письмо успешно отправлено

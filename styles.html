@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Стили граффити — GraffZone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+  <link rel="stylesheet" href="css/stats.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <span class="logo-text">GraffZone</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <button id="accessibilityToggle" class="btn btn-sm" aria-label="Включить режим для слабовидящих">
+              <i class="fas fa-eye"></i>
+            </button>
+            <li class="nav-item">
+              <button class="btn btn-sm search-toggle" id="searchToggle" aria-label="Поиск">
+                <i class="fas fa-search"></i>
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Галерея</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="artists.html">Художники</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="styles.html">Стили</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">События</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">О компании</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Модальное окно поиска -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="searchModalLabel">Поиск по сайту</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form id="searchForm" class="search-form">
+            <div class="input-group">
+              <input type="text" class="form-control bg-dark text-white" id="searchInput" placeholder="Введите поисковый запрос..." autocomplete="off">
+              <button class="btn btn-primary" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <div id="searchResults" class="search-results mt-3">
+            <!-- Результаты поиска будут добавлены через JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-grow-1">
+    <div class="container py-5">
+      <h1 class="text-center mb-5" data-aos="fade-up">Стили граффити</h1>
+      
+      <div class="row g-4">
+        <!-- Tagging -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="style-card card bg-dark text-white h-100">
+            <img src="img/tag-style.jpg" class="card-img-top" alt="Tagging стиль">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h4">Tagging</h3>
+              <p class="card-text">Быстрые подписи художников, простые линии. Это самая базовая и распространенная форма граффити, с которой начинали многие известные художники.</p>
+              <div class="mt-auto pt-3">
+                <a href="style-details.html?style=tagging&name=Tagging" class="btn btn-details">Подробнее о Tagging</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Throw-up -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="style-card card bg-dark text-white h-100">
+            <img src="img/throwup-style.jpg" class="card-img-top" alt="Throw-up стиль">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h4">Throw-up</h3>
+              <p class="card-text">Более сложные формы, обычно с двумя цветами. Характеризуется быстрым исполнением и объемными буквами.</p>
+              <div class="mt-auto pt-3">
+                <a href="style-details.html?style=throwup&name=Throw-up" class="btn btn-details">Подробнее о Throw-up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wildstyle -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="style-card card bg-dark text-white h-100">
+            <img src="img/wildstyle.jpg" class="card-img-top" alt="Wildstyle стиль">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h4">Wildstyle</h3>
+              <p class="card-text">Запутанные формы, стрелы, трёхмерность. Один из самых сложных и впечатляющих стилей в граффити искусстве.</p>
+              <div class="mt-auto pt-3">
+                <a href="style-details.html?style=wildstyle&name=Wildstyle" class="btn btn-details">Подробнее о Wildstyle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stencil -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="style-card card bg-dark text-white h-100">
+            <img src="img/stencil-style.png" class="card-img-top" alt="Stencil стиль">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h4">Stencil</h3>
+              <p class="card-text">Рисунки по трафарету, часто с социальным посылом. Популяризирован такими художниками как Бэнкси.</p>
+              <div class="mt-auto pt-3">
+                <a href="style-details.html?style=stencil&name=Stencil" class="btn btn-details">Подробнее о Stencil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mural -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="style-card card bg-dark text-white h-100">
+            <img src="img/mural-style.jpg" class="card-img-top" alt="Mural стиль">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h4">Mural</h3>
+              <p class="card-text">Большие настенные работы, часто в формате фресок. Отличаются детальной проработкой и масштабностью.</p>
+              <div class="mt-auto pt-3">
+                <a href="style-details.html?style=mural&name=Mural" class="btn btn-details">Подробнее о Mural</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Character -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="style-card card bg-dark text-white h-100">
+            <img src="img/character-style.jpg" class="card-img-top" alt="Character стиль">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h4">Character</h3>
+              <p class="card-text">Изображения персонажей, от мультяшных до реалистичных. Часто комбинируется с другими стилями граффити.</p>
+              <div class="mt-auto pt-3">
+                <a href="style-details.html?style=character&name=Character" class="btn btn-details">Подробнее о Character</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="stats-container">
+    <p>Время: <span class="time">00:00:00</span></p>
+    <p>Посетителей сегодня: <span class="visitors">0</span></p>
+  </div>
+
+  <!-- Футер -->
+  <footer class="footer mt-auto py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5>О GraffZone</h5>
+          <p>GraffZone - ваш проводник в мире уличного искусства. Мы объединяем художников, ценителей искусства и организаторов событий.</p>
+          <div class="social-links mt-3">
+            <a href="https://m.vk.com/" class="btn btn-sm me-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://m.vk.com/" class="btn btn-sm me-2"><i class="fab fa-facebook"></i></a>
+            <a href="https://m.vk.com/" class="btn btn-sm me-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://m.vk.com/" class="btn btn-sm"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5>Быстрые ссылки</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="gallery.html"><i class="fas fa-chevron-right me-2"></i>Галерея</a>
+            </li>
+            <li class="mb-2">
+              <a href="artists.html"><i class="fas fa-chevron-right me-2"></i>Художники</a>
+            </li>
+            <li class="mb-2">
+              <a href="events.html"><i class="fas fa-chevron-right me-2"></i>События</a>
+            </li>
+            <li class="mb-2">
+              <a href="blog.html"><i class="fas fa-chevron-right me-2"></i>Блог</a>
+            </li>
+            <li class="mb-2">
+              <a href="styles.html"><i class="fas fa-chevron-right me-2"></i>Стили</a>
+            </li>
+            <li class="mb-2">
+              <a href="about.html"><i class="fas fa-chevron-right me-2"></i>О компании</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Последние события</h5>
+          <div class="footer-events">
+            <div class="mb-3">
+              <a href="#">
+                <small class="text-primary">15 июля 2025</small>
+                <p class="mb-0">Фестиваль уличного искусства</p>
+              </a>
+            </div>
+            <div class="mb-3">
+              <a href="#">
+                <small class="text-primary">20 июля 2025</small>
+                <p class="mb-0">Мастер-класс по леттерингу</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Подписка на новости</h5>
+          <p>Будьте в курсе последних событий и новостей мира граффити</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Ваш email" required>
+              <button class="btn btn-primary" type="submit">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <hr class="bg-light my-4">
+      
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-md-0">© 2025 GraffZone. Все права защищены.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="privacy-policy.html" class="me-3">Политика конфиденциальности</a>
+          <a href="sitemap.html">Карта сайта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  <script src="js/styles.js"></script>
+  <script src="js/accessibility.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/search.js"></script>
+
+  <!-- Кнопка "Наверх" -->
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Прокрутить наверх">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</body>
+</html>

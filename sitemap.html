@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта сайта - GraffZone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link rel="stylesheet" href="css/stats.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <span class="logo-text">GraffZone</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <button id="accessibilityToggle" class="btn btn-sm" aria-label="Включить режим для слабовидящих">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <li class="nav-item">
+                            <button class="btn btn-sm search-toggle" id="searchToggle" aria-label="Поиск">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Галерея</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artists.html">Художники</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="styles.html">Стили</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">События</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Модальное окно поиска -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="searchModalLabel">Поиск по сайту</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="searchForm" class="search-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-dark text-white" id="searchInput" placeholder="Введите поисковый запрос..." autocomplete="off">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div id="searchResults" class="search-results mt-3">
+                        <!-- Результаты поиска будут добавлены через JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+            <h1 class="mb-5">Карта сайта</h1>
+            
+            <div class="row g-4">
+                <!-- Основные страницы -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Основные страницы</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="index.html" class="text-decoration-none">
+                                        <i class="fas fa-home me-2"></i>Главная страница
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="about.html" class="text-decoration-none">
+                                        <i class="fas fa-info-circle me-2"></i>О нас
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="contact.html" class="text-decoration-none">
+                                        <i class="fas fa-envelope me-2"></i>Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Галерея и художники -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Галерея и художники</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="gallery.html" class="text-decoration-none">
+                                        <i class="fas fa-images me-2"></i>Галерея работ
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="artists.html" class="text-decoration-none">
+                                        <i class="fas fa-users me-2"></i>Художники
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="styles.html" class="text-decoration-none">
+                                        <i class="fas fa-paint-brush me-2"></i>Стили граффити
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- События и блог -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">События и блог</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="events.html" class="text-decoration-none">
+                                        <i class="fas fa-calendar-alt me-2"></i>События
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="blog.html" class="text-decoration-none">
+                                        <i class="fas fa-blog me-2"></i>Блог
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Дополнительно -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Дополнительно</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="privacy-policy.html" class="text-decoration-none">
+                                        <i class="fas fa-shield-alt me-2"></i>Политика конфиденциальности
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="terms.html" class="text-decoration-none">
+                                        <i class="fas fa-file-contract me-2"></i>Условия использования
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="stats-container">
+        <p>Время: <span class="time">00:00:00</span></p>
+        <p>Посетителей сегодня: <span class="visitors">0</span></p>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer mt-auto py-5 bg-dark">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">О GraffZone</h5>
+                    <p class="text-muted">GraffZone - ваш проводник в мире уличного искусства. Мы объединяем художников, ценителей искусства и организаторов событий.</p>
+                    <div class="social-links mt-3">
+                        <a href="https://m.vk.com/" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://m.vk.com/" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="https://m.vk.com/" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="https://m.vk.com/" class="btn btn-outline-light btn-sm"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Быстрые ссылки</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="gallery.html" class="text-muted text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Галерея</a></li>
+                        <li class="mb-2"><a href="artists.html" class="text-muted text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Художники</a></li>
+                        <li class="mb-2"><a href="events.html" class="text-muted text-decoration-none"><i class="fas fa-chevron-right me-2"></i>События</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-muted text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Блог</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Последние события</h5>
+                    <div class="footer-events">
+                        <div class="mb-3">
+                            <a href="#" class="text-muted text-decoration-none">
+                                <small class="text-primary">15 июля 2025</small>
+                                <p class="mb-0">Международный фестиваль уличного искусства Urban Art Fest</p>
+                            </a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="text-muted text-decoration-none">
+                                <small class="text-primary">20 июля 2025</small>
+                                <p class="mb-0">Мастер-класс "Современные техники леттеринга"</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Подписка на новости</h5>
+                    <p class="text-muted">Будьте в курсе последних событий и новостей мира граффити</p>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Ваш email" required>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="bg-light my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-md-0">© 2025 GraffZone. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="privacy-policy.html" class="text-muted text-decoration-none me-3">Политика конфиденциальности</a>
+                    <a href="sitemap.html" class="text-muted text-decoration-none">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/search.js"></script>
+
+    <!-- Кнопка "Наверх" -->
+</body>
+</html> 
